@@ -12,7 +12,7 @@ s.listen()
 print(f"[*] Listening as {HOST}:{PORT}")
 
 def user_thread(conn, addr):
-    conn.send((f"Welcome {conn}").encode())
+    conn.send((f"Welcome").encode())
     run_thread = True
     while run_thread:
         try:
